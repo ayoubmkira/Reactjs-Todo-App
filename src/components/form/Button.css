@@ -1,0 +1,51 @@
+
+.menu .menu-item {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: none;
+    margin: 0 3px;
+    background-color: #1e2037;
+    color: #FFF;
+    cursor: pointer;
+}
+.menu .menu-item.btn-list.active {
+    background-color: #87e7a4;
+}
+.menu .menu-item.btn-form.active {
+    background-color: #f5d053;
+}
+.menu .menu-item.btn-history.active {
+    background-color: #e975ec;
+}
+
+.btn-add-todo {
+    margin-top: 30px;
+    font-size: 18px;
+    padding: 8px 25px;
+    min-width: 60%;
+    border-radius: 60px;
+    border: none;
+    margin: auto;
+    display: block;
+    background-color: salmon;
+    color: #FFF;
+    cursor: pointer;
+}
+.btn-add-todo[disabled] {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.btn-remove-todo {
+    padding: 0;
+    border: none;
+    background-color: #FFF;
+    height: 30px;
+    width: 25px;
+    cursor: pointer;
+}

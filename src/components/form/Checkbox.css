@@ -1,0 +1,67 @@
+
+/* Customize Checkbox for Category */
+.category {
+    margin-right: 5px;
+}
+.category input {
+    display: none;
+}
+.category label {
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #1f2138;
+    cursor: pointer;
+}
+.category input:checked + label {
+    background-color: lightblue;
+}
+
+/* Customize Checkbox for ItemTodo */
+.urgent input[type="checkbox"],
+.item-todo input[type="checkbox"] {
+    display: none;
+}
+.urgent label,
+.item-todo label {
+    padding-left: 30px;
+    position: relative;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 12.5px;
+}
+.urgent label:before,
+.item-todo label:before {
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    border: 2px solid #FFF;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+.urgent label:after,
+.item-todo label:after {
+    content: "";
+    position: absolute;
+    display: none;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    border-color: #FFF;
+    width: 4px;
+    height: 9px;
+    transform: rotate(40deg);
+    top: 1px;
+    left: 8.3px;
+}
+.urgent input[type="checkbox"]:checked + label:after,
+.item-todo input[type="checkbox"]:checked + label:after {
+    display: block;
+}
